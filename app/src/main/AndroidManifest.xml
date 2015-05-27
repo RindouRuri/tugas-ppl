@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="c03.ppl.hidupsehat" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Auth.Login"
+            android:label="Login">
+        </activity>
+        <activity android:name=".Auth.SignUp"
+            android:label="SignUp">
+        </activity>
+        <activity android:name=".Auth.EditProfile"
+            android:label="SignUp">
+        </activity>
+        <activity android:name=".Menu.ResepMakananMenu"
+            android:label="MenuResepMakanan">
+        </activity>
+        <activity android:name=".Menu.OlahragaMenu"
+            android:label="MenuOlahraga">
+        </activity>
+        <activity android:name=".Makanan.Resep.Index"
+            android:label="DaftarResep"></activity>
+        <activity android:name=".Makanan.Resep.DisplayResep"
+            android:label="DisplayResep">   </activity>
+        <activity android:name=".Makanan.Search.Index"
+            android:label="SearchResepMakanan"></activity>
+        <activity android:name=".Makanan.Favorit.Index"
+            android:label="DaftarFavorit"></activity>
+        <activity android:name=".Menu.AchievementMenu"
+            android:label="MenuAchievement"></activity>
+        <activity android:name=".Profile.UpdateBerat"
+            android:label="UpdateBeratBadan"></activity>
+        <activity android:name=".Profile.EditBerat"
+            android:label="EditBeratBadan"></activity>
+        <activity android:name=".olahraga.HitungJarak"
+            android:label="HitungJarak" ></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyApbn-BEXP8fz_pi3qrFMs5X0ubjaBo9Lc"/>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>
