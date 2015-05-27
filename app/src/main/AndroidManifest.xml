@@ -47,7 +47,21 @@
             android:label="EditBeratBadan"></activity>
         <activity android:name=".olahraga.HitungJarak"
             android:label="HitungJarak" ></activity>
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <!--Edit Terbaru-->
+
+                <activity android:name=".Achievement.Kalori"
+                    android:label="Kalori"></activity>
+
+            <activity android:name=".Achievement.Olahraga"
+                android:label="Olahraga"></activity>
+
+            <activity android:name=".Makanan.Request.RequestResep"
+                android:label="RequestResep"></activity>
+            <!--Edit Terbaru-->
+
+
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyApbn-BEXP8fz_pi3qrFMs5X0ubjaBo9Lc"/>

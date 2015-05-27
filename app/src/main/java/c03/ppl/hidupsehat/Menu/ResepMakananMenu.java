@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import c03.ppl.hidupsehat.Auth.Logout;
+import c03.ppl.hidupsehat.Makanan.Request.RequestResep;
 import c03.ppl.hidupsehat.Makanan.Resep.Index;
 import c03.ppl.hidupsehat.R;
 
@@ -25,6 +26,7 @@ public class ResepMakananMenu extends Activity {
         ImageButton daftarResep = (ImageButton) findViewById(R.id.daftarresep);
         ImageButton pencarian = (ImageButton) findViewById(R.id.mencariresep);
         ImageButton favorit = (ImageButton) findViewById(R.id.resepfavorit);
+        ImageButton request = (ImageButton) findViewById(R.id.requestresep);
 
         daftarResep.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +56,16 @@ public class ResepMakananMenu extends Activity {
                 startActivity(intent);
 
 
+            }
+        });
+
+        request.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), RequestResep.class);
+                Log.e(RequestResep.class.getName(), "Move to Form Request Resep");
+                startActivity(intent);
+                finish();
             }
         });
     }
